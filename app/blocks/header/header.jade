@@ -1,0 +1,8 @@
+include ../title/title
+
+mixin header()
+	+b('header').header&attributes(attributes)
+		+e.top-line
+			+e('img').logo(src="assets/images/logo.png")
+			+e('img').stamp(src="assets/images/stamp.png")
+		+title
