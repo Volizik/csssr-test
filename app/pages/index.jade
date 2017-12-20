@@ -1,7 +1,16 @@
-extends /blocks/layout-default/layout-default
+extends ../blocks/layout-default/layout-default
+include ../blocks/section/section
+include ../blocks/subtitle/subtitle
+include ../blocks/description/description
+include ../blocks/skills/skills
 
 block head
 	- var pageTitle = 'CSSSR Project Template';
 
 block content
-
+	+section()
+		+subtitle()
+			| Расскажите о себе чекбоксами
+		+description()
+			| Отметьте чекбоксами пункты, которые соответствуют вашим скиллам. Кстати, отсутствие опыта не означает, что у вас меньше шансов стать одним из наших товарищей. Это означает, что вы будете получать те задачи, с которыми гарантировано будете справляться.
+		+skills(getData('skills'))

@@ -1,3 +1,6 @@
-mixin basic-data()
+mixin basic-data(data)
 	+b.basic-data&attributes(attributes)
-		block
+		each item in data
+			+e.row
+				+e('p').key #{item.key}
+				+e('p').value #{item.value}

@@ -1,0 +1,9 @@
+include ../input-checkbox/input-checkbox
+
+mixin skills(data)
+	+b.skills&attributes(attributes)
+		each item in data
+			+e.row
+				label
+					input(type='checkbox' checked='#{item.checked}')
+					span #{item.value}

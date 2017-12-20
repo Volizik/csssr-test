@@ -1,4 +1,5 @@
 include ../title/title
+include ../basic-data/basic-data
 
 mixin header()
 	+b('header').header&attributes(attributes)
@@ -6,3 +7,4 @@ mixin header()
 			+e('img').logo(src="assets/images/logo.png")
 			+e('img').stamp(src="assets/images/stamp.png")
 		+title
+		+basic-data(getData('basic-data'))

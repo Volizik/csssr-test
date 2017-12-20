@@ -1,0 +1,78 @@
+[
+  {
+    "value": "БЭМ/OOCSS",
+    "checked": "true"
+  },
+  {
+    "value": "Pug (Jade)",
+    "checked": "true"
+  },
+  {
+    "value": "Stylus/LESS/SASS",
+    "checked": "true"
+  },
+  {
+    "value": "Работаю с SVG",
+    "checked": "true"
+  },
+  {
+    "value": "Верстаю семантично",
+    "checked": "true"
+  },
+  {
+    "value": "Accessibility (A11Y)",
+    "checked": "true"
+  },
+  {
+    "value": "ES2015/ES2016",
+    "checked": "true"
+  },
+  {
+    "value": "Webpack",
+    "checked": "true"
+  },
+  {
+    "value": "Дружу с WebGL",
+    "checked": "true"
+  },
+  {
+    "value": "jQuery",
+    "checked": "true"
+  },
+  {
+    "value": "jQuery",
+    "checked": "true"
+  },
+  {
+    "value": "Изучаю Angular",
+    "checked": "true"
+  },
+  {
+    "value": "Знаю React",
+    "checked": "true"
+  },
+  {
+    "value": "Знаю Node.js",
+    "checked": "true"
+  },
+  {
+    "value": "Использую Git",
+    "checked": "true"
+  },
+  {
+    "value": "С глазомером всё ок",
+    "checked": "true"
+  },
+  {
+    "value": "Читаю <a href='blog.csssr.ru'>blog.csssr.ru</a>",
+    "checked": "true"
+  },
+  {
+    "value": "Я ленивый(-ая)",
+    "checked": "true"
+  },
+  {
+    "value": "У меня хороший английский",
+    "checked": "true"
+  }
+]
