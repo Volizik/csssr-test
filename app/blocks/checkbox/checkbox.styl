@@ -1,0 +1,33 @@
+.checkbox
+	position relative
+	display inline-block
+	input
+		display none
+		&:checked + span:after
+			width 25px
+	span
+		position relative
+		display inline-flex
+		align-items flex-end
+		font-family 'PT Sans', sans-serif
+		font-size 21px
+		font-weight 700
+		&:before
+			position relative
+			margin-right 3px
+			display inline-block
+			width 25px
+			height 30px
+			content ''
+			background url(../images/checkbox.png) left bottom no-repeat
+		&:after
+			position absolute
+			left 0
+			bottom 0
+			margin-right 3px
+			display inline-block
+			width 0
+			height 30px
+			content ''
+			background url(../images/checkbox-checked.png) left bottom no-repeat
+			transition .7s
