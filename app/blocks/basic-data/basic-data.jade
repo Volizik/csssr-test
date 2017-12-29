@@ -3,4 +3,4 @@ mixin basic-data(data)
 		each item in data
 			+e.row
 				+e('p').key #{item.key}
-				+e('p').value #{item.value}
+				+e('input').value(value="#{item.value}")

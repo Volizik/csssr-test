@@ -2,6 +2,7 @@
 	display block
 	&__row
 		display flex
+		min-height 62.5px
 	&__key
 		flex-shrink 0
 		margin-right 20px
@@ -13,12 +14,14 @@
 		line-height 50px
 	&__value
 		padding-left 10px
+		padding-bottom 10px
 		display block
 		width 100%
-		min-height 62.5px
+		height 37px
 		font-family courier
 		font-size 30px
-		line-height 30px
-		white-space nowrap
-		text-overflow ellipsis
-		background url(../images/row-bg.png) 0 53% no-repeat
+		border-top none
+		border-left none
+		border-right none
+		border-image url(../images/row-bg.png) 5 round round
+		background none

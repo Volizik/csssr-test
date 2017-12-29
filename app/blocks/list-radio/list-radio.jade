@@ -1,0 +1,6 @@
+include ../input-radio/input-radio
+
+mixin list-radio(data)
+	+b.list-radio&attributes(attributes)
+		each item in data
+			+input-radio(item)

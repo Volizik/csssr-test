@@ -1,3 +1,5 @@
-mixin input-radio()
-	+b.input-radio&attributes(attributes)
-		block
+mixin input-radio(data)
+	+b('label').input-radio&attributes(attributes)
+		input(type='radio' name='radio' data-check='#{data.checked}')
+		+e('span').btn
+		+e('span').label #{data.label}

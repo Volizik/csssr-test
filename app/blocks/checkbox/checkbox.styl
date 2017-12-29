@@ -1,20 +1,18 @@
 .checkbox
 	position relative
-	display inline-block
+	display inline-flex
+	align-items flex-start
 	input
 		display none
-		&:checked + span:after
+		&:checked + .checkbox__btn:after
 			width 25px
-	span
+	&__btn
 		position relative
 		display inline-flex
 		align-items flex-end
-		font-family 'PT Sans', sans-serif
-		font-size 21px
-		font-weight 700
+		margin-right 3px
 		&:before
 			position relative
-			margin-right 3px
 			display inline-block
 			width 25px
 			height 30px
@@ -22,12 +20,23 @@
 			background url(../images/checkbox.png) left bottom no-repeat
 		&:after
 			position absolute
-			left 0
+			left 2px
 			bottom 0
-			margin-right 3px
 			display inline-block
 			width 0
 			height 30px
 			content ''
 			background url(../images/checkbox-checked.png) left bottom no-repeat
 			transition .7s
+	&__label
+		margin-top 9px
+		font-family 'PT Sans', sans-serif
+		font-size 21px
+		font-weight 700
+	a
+		margin-top 9px
+		padding-left 5px
+		font-family 'PT Sans', sans-serif
+		font-size 21px
+		font-weight 700
+		color #1f5f97

@@ -1,4 +1,6 @@
 mixin checkbox(data)
 	+b('label').checkbox&attributes(attributes)
-		input(type="checkbox" checked='#{data.checked}')
-		span #{data.value}
+		input(type="checkbox" data-check='#{data.checked}')
+		+e('span').btn
+		+e('span').label #{data.value}
+		a(href="http://#{data.anchor}") #{data.anchor}

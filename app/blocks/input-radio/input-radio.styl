@@ -1,2 +1,36 @@
 .input-radio
-	display block
+	display flex
+	align-items center
+	margin-right 20px
+	cursor pointer
+	input
+		display none
+		&:checked + .input-radio__btn:after
+			opacity 1
+	&__btn
+		position relative
+		display inline-flex
+		align-items flex-end
+		margin-right 3px
+		&:before
+			position relative
+			display inline-block
+			width 30px
+			height 30px
+			content ''
+			background url(../images/radio-btn.png) center center no-repeat
+		&:after
+			position absolute
+			left 0
+			bottom 0
+			display inline-block
+			width 30px
+			height 30px
+			opacity 0
+			content ''
+			background url(../images/radio-checked.png) center center no-repeat
+			transition .2s
+	&__label
+		font-family 'PT Sans', sans-serif
+		font-size 20px
+		font-weight 700

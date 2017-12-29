@@ -1,3 +1,4 @@
 mixin footer()
 	+b.footer&attributes(attributes)
-		block
+		+e('p').key Дата заполнения
+		+e('input').value(readonly value='01.01.2018')

@@ -4,7 +4,7 @@ include ../basic-data/basic-data
 mixin header()
 	+b('header').header&attributes(attributes)
 		+e.top-line
-			+e('img').logo(src="assets/images/logo.png")
-			+e('img').stamp(src="assets/images/stamp.png")
+			+e('img').logo(src="assets/images/logo.png" alt="logo")
+			+e('img').stamp(src="assets/images/stamp.png" alt="stamp")
 		+title
 		+basic-data(getData('basic-data'))

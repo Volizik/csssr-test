@@ -3,6 +3,10 @@ include ../blocks/section/section
 include ../blocks/subtitle/subtitle
 include ../blocks/description/description
 include ../blocks/skills/skills
+include ../blocks/scale/scale
+include ../blocks/about/about
+include ../blocks/list-radio/list-radio
+include ../blocks/footer/footer
 
 block head
 	- var pageTitle = 'CSSSR Project Template';
@@ -14,3 +18,20 @@ block content
 		+description()
 			| Отметьте чекбоксами пункты, которые соответствуют вашим скиллам. Кстати, отсутствие опыта не означает, что у вас меньше шансов стать одним из наших товарищей. Это означает, что вы будете получать те задачи, с которыми гарантировано будете справляться.
 		+skills(getData('skills'))
+	+section()
+		+subtitle()
+			| Уровень владения JavaScript
+		+scale()
+	+section()
+		+subtitle()
+			| Расскажите о себе словами
+		+description()
+			| Напишите пару предложений, чем вас привлекла наша вакансия и чего вы ожидаете от работы в CSSSR. Кстати, будет здорово, если при нехватке места для текста строки будут добавляться автоматически.
+		+about(getData('about'))
+	+section()
+		+subtitle()
+			| Какие у вас планы на будущее?
+		+description()
+			| Этот ответ ни на что не повлияет. Не беда, если в будущем ваши планы поменяются.
+		+list-radio(getData('future-plans'))
+	+footer()

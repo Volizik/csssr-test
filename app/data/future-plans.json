@@ -1,0 +1,18 @@
+[
+  {
+    "label": "Верстать",
+    "checked": "false"
+  },
+  {
+    "label": "Прокачиваться в JS",
+    "checked": "true"
+  },
+  {
+    "label": "Менеджерство",
+    "checked": "false"
+  },
+  {
+    "label": "Другое",
+    "checked": "false"
+  }
+]
