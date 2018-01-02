@@ -3,4 +3,8 @@ mixin checkbox(data)
 		input(type="checkbox" data-check='#{data.checked}')
 		+e('span').btn
 		+e('span').label #{data.value}
-		a(href="http://#{data.anchor}") #{data.anchor}
+		- var anchor = data.anchor
+		- if (anchor !== undefined)
+			a(href='http://' + anchor)= anchor
+
+

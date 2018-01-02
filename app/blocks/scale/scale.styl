@@ -3,10 +3,21 @@
 	padding-bottom 26px
 	display block
 	width 100%
+	cursor pointer
+	overflow hidden
 	+below(640px)
 		padding-bottom 110px
 	+below(450px)
 		padding-bottom 160px
+	&__slider
+		position relative
+		width 100%
+		height 20px
+	&__holder
+		position absolute
+		width 40px
+		height 40px
+		background url(../images/scale-mark.png) center center no-repeat
 	&__range
 		&:after
 			display block
@@ -17,28 +28,6 @@
 			background-size cover
 			+below(500px)
 				background-size contain
-		input[type='range']
-			-webkit-appearance none
-			margin-top 20px
-			width 100%
-			height 0
-			background-color transparent
-			&::-webkit-slider-thumb
-				-webkit-appearance none
-				width 16px
-				height 16px
-				cursor pointer
-				background url(../images/scale-mark.png) center center no-repeat
-			&::-moz-range-thumb
-				width 16px
-				height 16px
-				cursor pointer
-				background url(../images/scale-mark.png) center center no-repeat
-			&::-ms-thumb
-				width 16px
-				height 16px
-				cursor pointer
-				background url(../images/scale-mark.png) center center no-repeat
 	&__items
 		position relative
 		margin-top 5px

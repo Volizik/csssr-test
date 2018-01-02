@@ -1,7 +1,8 @@
 mixin scale()
 	+b.scale&attributes(attributes)
+		+e.slider
+			+e.holder(style='left: 60%')
 		+e.range
-			input(type="range" min="0" max="100" value="60" step="1")
 		+e('ul').items
 			li Не владею
 			li Использую готовые решения

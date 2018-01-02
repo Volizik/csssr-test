@@ -1,4 +1,4 @@
 mixin about(data)
 	+b.about&attributes(attributes)
-		textarea
+		+e('p').text(contenteditable='true')
 			| #{data.about}
